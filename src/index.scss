@@ -14,7 +14,6 @@ h1, h2, h3, p, ul {
 	align-items:center;
 	justify-content:center;
 	height: 100%;
-	
 }
 
 ul {
@@ -27,25 +26,32 @@ ul {
 }
 
 .petrol {
-	list-style-image: url(/img/icon-park_petrol.svg);
+	list-style-image: url(img/icon-park_petrol.svg);
 	list-style-type: '👉';
 	padding-inline-start: 1ch;
 }
 
 .diesel {
-	list-style-image: url(/img/icon-park-outline_petrol.svg);
+	list-style-image: url(img/icon-park-outline_petrol.svg);
 }
 
-.passanger {
+.gas {
+	list-style-image: url(img/gas-station.svg);
+	&::marker {
+	width: 48px;
+	}
+}
+
+.passenger {
 	padding-left: 20px;
-	background-image: url(/img/clarity_car-solid.svg);
+	background-image: url(img/clarity_car-solid.svg);
 	background-repeat: no-repeat;
 	background-size: 20px;
 }
 
 .truck {
 	padding-left: 20px;
-	background-image: url(/img/bxs_truck.svg);
+	background-image: url(img/bxs_truck.svg);
 	background-repeat: no-repeat;
 	background-size: 20px;
 }
@@ -113,21 +119,21 @@ h1 {
 	cursor:pointer;
 	border: none;
 	transition: background-color 0.3s ease;
-}
 
-.btn:hover {
-	background-color:#1172ff;
+	&:hover {
+		background-color:#1172ff;
+	}
 
-}
-.btn:active {
-	background-color:#11cccc;
-	transform: translateY(2px);
-}
+	&:active {
+		background-color:#11cccc;
+		transform: translateY(2px);
+	}
 
-.btn:disabled {
-	background:#6699ff;
-	opacity: 0.4;
-	cursor: auto;
+	&:disabled {
+		background:#6699ff;
+		opacity: 0.4;
+		cursor: auto;
+	}
 }
 
 .car {
